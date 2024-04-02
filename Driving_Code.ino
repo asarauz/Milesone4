@@ -291,7 +291,7 @@ void loop()
                         case 1: // Drive forward — motors spin in opposite directions as they are opposed by 180 degrees
                            setMotor(-1, driveSpeed, cIN1Chan[0], cIN2Chan[0]);  // left motor forward
                            setMotor(1, driveSpeed, cIN1Chan[1], cIN2Chan[1]);
-  
+                           // Keep driving forawrd indefinetly for video purposes
                            //if(encoder[0].pos <= -4384){
                              //encoder[0].pos = 0;                                                // clear left encoder
                            //driveIndex = 2;}                                  // next state: drive backward
